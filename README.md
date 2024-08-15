@@ -1,37 +1,77 @@
 # DataScienceHeartDiseaseAssignment
 Heart Disease
 
-Selected Attributes and Their Descriptions
-  age: Age of the patient in years.
-  sex: Gender of the patient (1 = male, 0 = female).
-  cp: Chest pain type (1: typical angina, 2: atypical angina, 3: non-anginal pain, 4: asymptomatic).   
-  trestbps: Resting blood pressure in mm Hg.
-  chol: Serum cholesterol level in mg/dl.
-  fbs: Fasting blood sugar level (1: > 120 mg/dl, 0: <= 120 mg/dl).   
-  restecg: Resting electrocardiographic results (0: normal, 1: ST-T wave abnormality, 2: left ventricular hypertrophy).
-  thalach: Maximum heart rate achieved.
-  exang: Exercise-induced angina (1: yes, 0: no).   
-  oldpeak: ST depression induced by exercise relative to rest.
-  slope: The slope of the peak exercise ST segment (1: upsloping, 2: flat, 3: downsloping).
-  ca: Number of major vessels (0-3) colored by fluoroscopy.
-  thal: Thallium stress result (3: normal, 6: fixed defect, 7: reversible defect).   
-  num: Diagnosis of heart disease (target variable) (0: < 50% diameter narrowing, 1: > 50% diameter narrowing)
-  
+## Heart Disease Attribute Breakdown
+  !- Generated to understand variables -!
+These attributes are pivotal in evaluating the risk and presence of heart disease in patients.
 
+1. **Age**:
+   - This attribute represents the patient’s age in years.
+   - Age is a critical factor in heart disease risk, with older individuals generally at higher risk.
 
-1. `"age": "ageInYears"` - Age of the patient in years.
-2. `"sex": "gender"` - Gender of the patient.
-3. `"cp": "chestPainType"` - Type of chest pain experienced by the patient.
-4. `"trestbps": "restingBloodPressureMmHg"` - Resting blood pressure in mmHg (millimeters of mercury).
-5. `"chol": "serumCholesterolMgDl"` - Serum cholesterol level in mg/dl (milligrams per deciliter).
-6. `"fbs": "fastingBloodSugarGt120MgDl"` - Fasting blood sugar level greater than 120 mg/dl.
-7. `"restecg": "restingElectrocardiogramResults"` - Results of the resting electrocardiogram.
-8. `"thalach": "maximumHeartRateAchieved"` - Maximum heart rate achieved during exercise.
-9. `"exang": "exerciseInducedAngina"` - Whether exercise induced angina (chest pain).
-10. `"oldpeak": "stDepressionInducedByExercise"` - ST depression induced by exercise relative to rest.
-11. `"slope": "peakExerciseStSegmentSlope"` - Slope of the peak exercise ST segment.
-12. `"ca": "numberOfMajorVesselsColoredByFluoroscopy"` - Number of major vessels colored by fluoroscopy.
-13. `"thal": "thalliumStressResult"` - Thallium stress test result.
-14. `"target": "diagnosisOfHeartDisease"` - Diagnosis of heart disease (the target variable).
+2. **Sex (gender)**:
+   - This denotes the patient’s gender (1 = male, 0 = female).
+   - Gender plays a role in heart disease risk, with men typically at higher risk at a younger age compared to women.
 
-These terms are commonly used in datasets that aim to predict the presence of heart disease or assess cardiovascular health based on various medical parameters.
+3. **Chest Pain Type (cp)**:
+   - This attribute categorizes the type of chest pain the patient experiences, which is crucial for diagnosing heart conditions.
+   - **Types**:
+     - **1: Typical Angina** - Predictable chest pain triggered by stress or exertion.
+     - **2: Atypical Angina** - Chest pain that doesn’t follow the typical pattern.
+     - **3: Non-Anginal Pain** - Chest pain unrelated to heart conditions.
+     - **4: Asymptomatic** - No chest pain present.
+
+4. **Resting Blood Pressure (trestbps)**:
+   - **Resting Blood Pressure** is measured in mm Hg at the time of admission.
+   - High blood pressure (hypertension) is a significant risk factor for heart disease.
+
+5. **Serum Cholesterol (chol)**:
+   - **Cholesterol** refers to the total serum cholesterol level in mg/dl.
+   - Elevated cholesterol can lead to plaque buildup in arteries, increasing heart disease risk.
+
+6. **Fasting Blood Sugar (fbs)**:
+   - This measures blood sugar levels after fasting (typically overnight before the test).
+   - **Fasting Blood Sugar > 120 mg/dl** is an indicator of high blood sugar, which could signal diabetes, a key risk factor for heart disease.
+
+7. **Resting Electrocardiogram (restecg)**:
+   - An **Electrocardiogram (ECG or EKG)** measures the electrical activity of the heart, providing information about heart rhythm and potential abnormalities.
+   - **Values**:
+     - **0: Normal**.
+     - **1: ST-T wave abnormality** (which could indicate heart issues).
+     - **2: Left ventricular hypertrophy**.
+
+8. **Maximum Heart Rate Achieved (thalach)**:
+   - **Thalach** refers to the highest heart rate a patient achieves during exercise, indicating the heart’s ability to function under stress.
+
+9. **Exercise-Induced Angina (exang)**:
+   - **Angina** is chest pain due to reduced blood flow to the heart.
+   - **Exercise-Induced Angina** indicates whether this pain occurs during physical exertion, suggesting that the heart may not be receiving enough oxygen during exercise.
+
+10. **ST Depression Induced by Exercise (oldpeak)**:
+    - **ST Segment** refers to a section on an ECG.
+    - **ST Depression** indicates a dip below the baseline, suggesting reduced blood flow to the heart muscle during exercise.
+
+11. **Slope of Peak Exercise ST Segment (slope)**:
+    - This represents the slope of the ST segment during peak exercise, indicating the heart’s condition.
+    - **Types**:
+      - **1: Upsloping** (usually normal).
+      - **2: Flat** (possible concern).
+      - **3: Downsloping** (more likely to indicate heart disease).
+
+12. **Number of Major Vessels Colored by Fluoroscopy (ca)**:
+    - **Fluoroscopy** is an imaging technique that provides real-time X-ray images.
+    - The **ca** attribute represents the number of major coronary arteries (0-3) that show blockages when highlighted with contrast dye, helping to assess the extent of coronary artery disease.
+
+13. **Thallium Stress Test Result (thal)**:
+    - **Thallium** is a radioactive tracer used in stress tests to visualize blood flow in the heart.
+    - **Results**:
+      - **3: Normal** - Normal blood flow.
+      - **6: Fixed Defect** - An area with permanently reduced blood flow.
+      - **7: Reversible Defect** - An area with reduced blood flow during exercise but normal flow at rest.
+
+14. **Target (num)**:
+    - This is the **diagnosis of heart disease**:
+      - **0**: No significant heart disease (less than 50% narrowing of any major coronary artery).
+      - **1-4**: Presence of heart disease, with varying degrees of severity (greater than 50% narrowing).
+
+These 14 attributes are key to predicting and diagnosing heart disease, offering a comprehensive assessment of a patient’s cardiovascular health.
