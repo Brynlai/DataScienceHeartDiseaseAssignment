@@ -1,6 +1,24 @@
 # DataScienceHeartDiseaseAssignment
 Heart Disease
 
+Selected Attributes and Their Descriptions
+  age: Age of the patient in years.
+  sex: Gender of the patient (1 = male, 0 = female).
+  cp: Chest pain type (1: typical angina, 2: atypical angina, 3: non-anginal pain, 4: asymptomatic).   
+  trestbps: Resting blood pressure in mm Hg.
+  chol: Serum cholesterol level in mg/dl.
+  fbs: Fasting blood sugar level (1: > 120 mg/dl, 0: <= 120 mg/dl).   
+  restecg: Resting electrocardiographic results (0: normal, 1: ST-T wave abnormality, 2: left ventricular hypertrophy).
+  thalach: Maximum heart rate achieved.
+  exang: Exercise-induced angina (1: yes, 0: no).   
+  oldpeak: ST depression induced by exercise relative to rest.
+  slope: The slope of the peak exercise ST segment (1: upsloping, 2: flat, 3: downsloping).
+  ca: Number of major vessels (0-3) colored by fluoroscopy.
+  thal: Thallium stress result (3: normal, 6: fixed defect, 7: reversible defect).   
+  num: Diagnosis of heart disease (target variable) (0: < 50% diameter narrowing, 1: > 50% diameter narrowing)
+  
+
+
 1. `"age": "ageInYears"` - Age of the patient in years.
 2. `"sex": "gender"` - Gender of the patient.
 3. `"cp": "chestPainType"` - Type of chest pain experienced by the patient.
