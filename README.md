@@ -6,12 +6,13 @@ Heart Disease
 These attributes are pivotal in evaluating the risk and presence of heart disease in patients.
 
 1. **Age**:
-   - This attribute represents the patient’s age in years.
    - Age is a critical factor in heart disease risk, with older individuals generally at higher risk.
+   - Assumption: HEART DISEASE increases with AGE
+
 
 2. **Sex (gender)**:
    - This denotes the patient’s gender (1 = male, 0 = female).
-   - Gender plays a role in heart disease risk, with men typically at higher risk at a younger age compared to women.
+   - Assumtion: MEN typically at Higher Risk at a younger age compared to women.
 
 3. **Chest Pain Type (cp)**:
    - This attribute categorizes the type of chest pain the patient experiences, which is crucial for diagnosing heart conditions.
@@ -73,5 +74,3 @@ These attributes are pivotal in evaluating the risk and presence of heart diseas
     - This is the **diagnosis of heart disease**:
       - **0**: No significant heart disease (less than 50% narrowing of any major coronary artery).
       - **1-4**: Presence of heart disease, with varying degrees of severity (greater than 50% narrowing).
-
-These 14 attributes are key to predicting and diagnosing heart disease, offering a comprehensive assessment of a patient’s cardiovascular health.
