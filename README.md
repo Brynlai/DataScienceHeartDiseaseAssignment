@@ -73,4 +73,4 @@ These attributes are pivotal in evaluating the risk and presence of heart diseas
 14. **Target (num)**:
     - This is the **diagnosis of heart disease**:
       - **0**: No significant heart disease (less than 50% narrowing of any major coronary artery).
-      - **1-4**: Presence of heart disease, with varying degrees of severity (greater than 50% narrowing).
+      - **1**: Presence of heart disease, with varying degrees of severity (greater than 50% narrowing).
